@@ -1,0 +1,67 @@
+
+
+<html>
+<head>
+	<title>Create Book</title>
+</head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+h1 {
+	text-shadow: 2px 2px 5px red;
+}
+
+</style>
+<body style="background-color: lightblue">
+	<ul>
+  <li><a href="list_of_book" class="active">Home</a></li>
+  <li><a href="#new">New</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li style="float:right"><a class="active" href="list_of_book">Exit</a></li>
+</ul>
+	<h1 <h1 style="color: green"><b><center>DWIT Books House</center></b></h1>
+		<form action="/create_book" method="POST">
+		{% csrf_token %}
+		<center><h3 style="color: blue">name<br>
+		      <input type="text" name="name"/><br/><br>
+		author<br>
+		    <input type="text" name="author"/><br/><br>
+		book_ISBN<br>
+		 <input type="text" name="book_ISBN"/><br/><br>
+		pub_date<br>
+		  <input type="text" name="pub_date"/><br/><br>
+		category<br>
+		  <input type="text" name="category"/><br/><br>
+		  <div class="hero">
+		<input type="Submit" value="Submit"/></h3>
+	</div>
+	</center>
+	</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+.bod {
+    background: white url("images/dwit.png") no-repeat;
+  
+  
+}
+.header{
+	background: white url("images/book.jpg")no-repeat;
+	background-size: cover;
+}
+body{
+    background: white url("images/rack.jpg") no-repeat;
+   background-size: cover;
+} 
+  

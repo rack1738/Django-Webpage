@@ -1,0 +1,18 @@
+<html>
+<head>
+	</head><center>
+<body style="background-color: lightblue">
+	<h1><b>User registration form</b></h1>
+	<div class="container">
+	<div class="col-md-5">
+		<form method="post" action="">
+			{% csrf_token %}
+			{{frm.as_p}}
+			<button type="submit">Submit</button>
+			<button><a href="home_page">Back</a></button>
+		</form>
+	</div>
+</div>
+</body>
+</center>
+</html>
